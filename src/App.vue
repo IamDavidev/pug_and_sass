@@ -1,18 +1,26 @@
-<template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  <router-view/>
-  </div>
+<template lang="pug">
+
+div#nav 
+  router-link(to="/") HOME   
+    router-link(to="/about") ABOUT 
+  router-view
+  Footer
+
 </template>
+<script>
+import Footer from "./components/Footer.vue";
+export default {
+  components: {
+    Footer,
+  },
+};
+</script>
 
 <style lang="scss">
-body{
-  background:#000000;
-  color:#f5f5f5
+body {
+  background: #000000;
+  color: #ffffff;
 }
-
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,15 +31,14 @@ body{
 
 #nav {
   padding: 30px;
-
   a {
+    margin-right: 10px;
     font-weight: bold;
-    color: #2c3e50;
+    color: #ffffff;
 
     &.router-link-exact-active {
       color: #42b983;
     }
   }
 }
-
 </style>
