@@ -25,9 +25,9 @@ export default {
 
 <style  scoped lang="scss">
 .footer{
-    background: #00184b;
-    padding:2px;
-    width:90%;
+    background: #213661;
+    padding:1px;
+    width:95%;
     position:absolute;
     bottom:0;
     h3{
